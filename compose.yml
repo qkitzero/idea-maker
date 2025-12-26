@@ -76,8 +76,6 @@ services:
       - DB_SSL_MODE=${COMBINATION_DB_SSL_MODE}
       - AUTH_SERVICE_HOST=${AUTH_SERVER_HOST}
       - AUTH_SERVICE_PORT=${AUTH_SERVER_CONTAINER_PORT}
-      - USER_SERVICE_HOST=${USER_SERVER_HOST}
-      - USER_SERVICE_PORT=${USER_SERVER_CONTAINER_PORT}
     depends_on:
       combination-db:
         condition: service_healthy
